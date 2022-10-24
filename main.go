@@ -1,12 +1,14 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
 func main() {
-	a := "my name is"
-	b := "is"
-	fmt.Println(strings.Contains(a, b))
+	array := []int{1, 2, 3, 4, 5}
+	for i := 0; i < len(array); i++ {
+		if (array[i] % 2) == 0 {
+			fmt.Print(array[i])
+			fmt.Println(" It's even number")
+		}
+
+	}
 }
