@@ -7,15 +7,26 @@ type Nigger struct {
 	name  string
 }
 
-func (n *Nigger) getName() {
-	fmt.Println(n.name)
+type Acts interface {
+	Working()
+	NotEating()
+	EatChicken()
 }
 
-func (an *Nigger) getPrice() {
-	fmt.Println(an.price)
+func (n *Nigger) Working(act string) {
+	fmt.Println("I'm", act, "damn")
 }
+
+//func (n *Nigger) getName() {
+//	fmt.Println(n.name)
+//}
+//
+//func (an *Nigger) getPrice() {
+//	fmt.Println(an.price)
+//}
 
 func main() {
+
 	n := Nigger{
 		name:  "Kaley",
 		price: 124,
@@ -24,5 +35,10 @@ func main() {
 		price: 500,
 		name:  "Zoki",
 	}
-	fmt.Println(an, n)
+	var a, b string
+	fmt.Scanln(&a)
+	fmt.Scanln(&b)
+
+	n.Working(a)
+	an.Working(b)
 }
