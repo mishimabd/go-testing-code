@@ -1,21 +1,37 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 type Nigger struct {
 	price int
 	name  string
 }
 
-type Acts interface {
-	Working()
-	NotEating()
-	EatChicken()
-}
-
-func (n *Nigger) Working(act string) {
-	fmt.Println("I'm", act, "damn")
-}
+//
+//func (n *Nigger) NotEating() {
+//	fmt.Println("I am not eating")
+//}
+//
+//func (n *Nigger) EatChicken() {
+//	fmt.Println("I am eating chicken!")
+//}
+//
+//type Acts interface {
+//	Working()
+//	NotEating()
+//	EatChicken()
+//}
+//
+//func NewModel(b int, arg string) *Acts {
+//	return &Nigger{}
+//}
+//
+//func (n *Nigger) Working() {
+//	fmt.Println("I'm damn")
+//}
 
 //func (n *Nigger) getName() {
 //	fmt.Println(n.name)
@@ -25,20 +41,16 @@ func (n *Nigger) Working(act string) {
 //	fmt.Println(an.price)
 //}
 
-func main() {
-
-	n := Nigger{
-		name:  "Kaley",
-		price: 124,
-	}
-	an := Nigger{
-		price: 500,
-		name:  "Zoki",
-	}
-	var a, b string
-	fmt.Scanln(&a)
-	fmt.Scanln(&b)
-
-	n.Working(a)
-	an.Working(b)
+func heavy() {
+	time.Sleep(time.Second * 5)
 }
+func main() {
+	fmt.Println("Started")
+	heavy()
+	fmt.Println("Nigger")
+
+}
+
+//func Anything(anything interface{}) {
+//	fmt.Println(anything)
+//}
