@@ -5,10 +5,10 @@ import (
 	"time"
 )
 
-type Nigger struct {
-	price int
-	name  string
-}
+//type Nigger struct {
+//	price int
+//	name  string
+//}
 
 //
 //func (n *Nigger) NotEating() {
@@ -45,8 +45,7 @@ func heavy() {
 	time.Sleep(time.Second * 5)
 }
 func main() {
-	fmt.Println("Started")
-	heavy()
+	go heavy()
 	fmt.Println("Nigger")
 
 }
