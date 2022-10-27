@@ -53,12 +53,19 @@ func third() {
 	time.Sleep(time.Second * 5)
 	fmt.Println("I am nigger 5")
 }
+func left() {
+	for {
+		fmt.Println("I am nigger which is leftover")
+		time.Sleep(time.Second * 1)
+	}
+}
 func main() {
 	fmt.Println("go on")
 	go onedelay()
 	go second()
 	go third()
-	time.Sleep(time.Second * 6)
+	//go left()
+	select {}
 }
 
 //func Anything(anything interface{}) {
