@@ -41,13 +41,24 @@ import (
 //	fmt.Println(an.price)
 //}
 
-func heavy() {
+func onedelay() {
+	time.Sleep(time.Second * 3)
+	fmt.Println("I am nigger 3")
+}
+func second() {
+	time.Sleep(time.Second * 4)
+	fmt.Println("I am nigger 4")
+}
+func third() {
 	time.Sleep(time.Second * 5)
+	fmt.Println("I am nigger 5")
 }
 func main() {
-	go heavy()
-	fmt.Println("Nigger")
-
+	fmt.Println("go on")
+	go onedelay()
+	go second()
+	go third()
+	time.Sleep(time.Second * 6)
 }
 
 //func Anything(anything interface{}) {
