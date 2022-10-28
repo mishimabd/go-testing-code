@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 //type Nigger struct {
@@ -41,31 +40,31 @@ import (
 //	fmt.Println(an.price)
 //}
 
-func onedelay() {
-	time.Sleep(time.Second * 3)
-	fmt.Println("I am nigger 3")
-}
-func second() {
-	time.Sleep(time.Second * 4)
-	fmt.Println("I am nigger 4")
-}
-func third() {
-	time.Sleep(time.Second * 5)
-	fmt.Println("I am nigger 5")
-}
-func left() {
-	for {
-		fmt.Println("I am nigger which is leftover")
-		time.Sleep(time.Second * 1)
-	}
-}
+//func onedelay() {
+//	time.Sleep(time.Second * 3)
+//	fmt.Println("I am nigger 3")
+//}
+//func second() {
+//	time.Sleep(time.Second * 4)
+//	fmt.Println("I am nigger 4")
+//}
+//func third() {
+//	time.Sleep(time.Second * 5)
+//	fmt.Println("I am nigger 5")
+//}
+//func left() {
+//	for {
+//		fmt.Println("I am nigger which is leftover")
+//		time.Sleep(time.Second * 1)
+//	}
+//}
+
 func main() {
-	fmt.Println("go on")
-	go onedelay()
-	go second()
-	go third()
-	//go left()
-	select {}
+	fmt.Print("Hello ")
+	go func() {
+		fmt.Print("World ")
+	}()
+	fmt.Println("!")
 }
 
 //func Anything(anything interface{}) {
