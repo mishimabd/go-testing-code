@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("task5 of go in stepik")
+	var a, b, c int
+	fmt.Scan(&a, &b, &c)
+	for i := 0; i <= a; i++ {
+		if (i%b == 0) && (i%c != 0) {
+			fmt.Println(i)
+			break
+		} else {
+			continue
+		}
+	}
 }
