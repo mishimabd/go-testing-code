@@ -1,0 +1,14 @@
+	case (firstNumber > 0) && (firstNumber < 9):
+		firstNumber = one
+	case (firstNumber > 10) && (firstNumber < 99):
+		one = firstNumber / 10
+		two = firstNumber % 10
+	case (firstNumber > 100) && (firstNumber < 999):
+		one = firstNumber / 100
+		two = firstNumber / 10 % 10
+		three = firstNumber % 10
+	case (firstNumber > 1000) && (firstNumber < 9999):
+		one = firstNumber / 1000
+		two = firstNumber / 100 % 10
+		three = firstNumber / 10 % 10
+		four = firstNumber % 10

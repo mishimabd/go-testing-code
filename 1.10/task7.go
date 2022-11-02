@@ -9,7 +9,7 @@ func main() {
 		if StartMoney > FinishMoney {
 			break
 		} else {
-			StartMoney = StartMoney + StartMoney*(Percent/100)
+			StartMoney += StartMoney * Percent / 100
 			year++
 		}
 	}
