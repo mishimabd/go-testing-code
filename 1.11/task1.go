@@ -3,14 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	var a, num float64
-	fmt.Scan(&a)
-	num = a * a
-	if a <= 0 {
-		fmt.Printf("число %.2f не подходит", a)
-	} else if a > 9999 {
-		fmt.Printf("%e", a)
-	} else {
-		fmt.Printf("%1.4f", num)
+	var workArray [10]uint8
+	for i := 0; i < len(workArray); i++ {
+		fmt.Scan(&workArray[i])
 	}
+	for i := 0; i < 3; i++ {
+		var first, second int
+		fmt.Scan(&first, &second)
+		numberOne := workArray[first]
+		secondNumber := workArray[second]
+		workArray[first] = secondNumber
+		workArray[second] = numberOne
+	}
+	for i := 0; i < len(workArray); i++ {
+		fmt.Print(workArray[i], " ")
+	}
+
 }
