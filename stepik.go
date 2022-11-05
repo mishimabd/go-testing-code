@@ -3,9 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var n int
-	// считываем числа пока не будет введен 0
-	for fmt.Scan(&n); n != 0; fmt.Scan(&n) {
-		fmt.Println(n)
-	}
+	a := []int{1, 2, 3}
+	b := make([]int, 3, 3)
+	fmt.Println(b)
+	n := copy(b, a)
+
+	fmt.Println(n)
+	fmt.Printf("a = %v\n", a) // a = [1 2 3]
+	fmt.Printf("b = %v\n", b) // b = [1 2 3]
+	fmt.Printf("Скопировано %d элемента\n", n)
 }
