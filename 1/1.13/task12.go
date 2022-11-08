@@ -22,3 +22,14 @@ func main() {
 	}
 
 }
+
+//package main
+//
+//import "fmt"
+//func main(){
+//    var mas int
+//    fmt.Scan(&mas)
+//    for i:=1;i<=mas;i*=2{
+//        fmt.Print(i," ")
+//    }
+//}
